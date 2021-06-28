@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Topologies</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/s-logo.png">
+    <style>
+        .t-img {
+            float: left;
+            max-width: 90px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="h1">Network Topologies </h1>
+    <h2 class="h2"></h2>
+    <p class="p">
+        The arrangement (also called layout) of nodes in a network is called network topology.
+        There are broadly two types of topologies
+        In broadcast topology, all nodes share the same physical link. When one node
+        transmits, all nodes receive.
+        simultaneously transmits, and there is a collision resolution mechanism for handling it.
+        Broadcast topologies are mainly bus and ring. In point to point topology, every pair of
+        nodes has a dedicated link.
+    </p>
+    <ol>
+        <li id="li">Bus Topology</li>
+        <img class="t-img" src="img/bus.png" alt="">
+        <p class="p">
+            In bus topology, there is a long cable, called backbone cable (or simply backbone), tha
+            connects various nodes through a connector called tap In this,
+            a message sent by one is received by all devices connected to backbone cable. This
+            topology requires less cabling and is easy to install and extend the network laid u
+            however, fault detection and isolation is difficult.
+        </p>
+        <li id="li"> Ring Topology</li>
+        <p class="p">
+            <img class="t-img" src="img/Ring.png" alt="">
+            In ring topology, all the devices are attached through a cable in the form of ring. The message to be
+            communicated is transmitted in one direction,
+            thereby, relaying the message to the intended recipient. addition and deletion of
+            devices, and fault detection and isolation is easy. However, the topology suffers from
+            the limitation of single point failure leading to disruption of the entire network. sending a
+            message from one node to another node may take more time.
+        </p>
+        <li id="li">Star Topology</li>
+        <p class="p">
+            <img class="t-img" src="img/star.jpg" alt="">
+            In star topology, all the devices are connected to the central controller called hub communication between
+            any two devices takes place through the
+            hub responsible for relaying messages.
+            configured. Also, fault detection and isolation is easy. However, it requires more cabling
+            as compared to bus and ring topology. Also, hub failure will lead to network failure
+        </p>
+        <li id="li">Mesh Topology</li>
+        <p class="p">
+            <img src="img/mesh.jfif" alt="" class="t-img">
+            In mesh topology, every node is connected with every other node in the network Because of dedicated point to
+            point connection between every
+            possible pair of nodes, the topology provides secure data t
+            problem. it requires a large number of connections to establish the topology. This leads
+            to difficulty in installation as the number of nodes grow as the network grows.
+        </p>
+        <li id="li">Tree Topology</li>
+        <p class="p">
+            <img src="img/TreeTopology.png" alt="" class="t-img">
+            tree topology is a hybrid topology using a combination of star and bus topology.
+            Backbone cable in a bus topology acts like the stem of the tree, and star networks (and
+            even individual nodes) are connected to the main
+            tree as shown in Figure 1.14 damage to a segment of a network laid using tree topology
+            will not affect other segments.installation and configuration is difficult as compared to
+            other topologies. also, if the backbone cab
+            communication is disrupted
+        </p>
+    </ol>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
